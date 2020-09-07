@@ -18,7 +18,16 @@ There are a couple of conventions that are required to get your changes merged. 
 To maintain not only quality but also managability, no changes can be commited to the master branch.
 Every change will happen on a seperate branch and has to be merged via merge request.  
 These merge requests will be taken care of by our code owners.  
-**Make sure your commit messages are useful and appropriate!**
+
+**To speed up the review process please make sure that:**
+ * You didn't commit any copyrighted or unneccesary files
+ * Your commit messages are useful and appropriate!
+ * You branch is named correctly (e.g. feature_camera-movement or bugfix_crash-on-fullscreen)
+
+Try to always branch off of the latest commit on the mnaster branch.  
+If you base your work on a branch that is still in review, you'll have to wait for it to be merged and rebase all changes made during review into your branch.  
+
+Also check out https://docs.gitlab.com/ee/user/project/issues/crosslinking_issues.html to see how to properly mention issues and commits.  
 
 Please be civil in MR discussions and make sure you read the Code of Conduct below.
 
