@@ -50,6 +50,9 @@ public class MouseMovement : MonoBehaviour
 	void Update()
 	{
 		if (Vector3.Distance(transform.position, destination) > 0.1f)
+		{
 			transform.position = Vector3.MoveTowards(transform.position, destination, movementSpeed * Time.deltaTime);
+
+		}
 	}
 }
