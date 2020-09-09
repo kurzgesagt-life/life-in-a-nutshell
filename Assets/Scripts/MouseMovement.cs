@@ -42,6 +42,7 @@ public class MouseMovement : MonoBehaviour
         if (map.HasTile(gridPosition))
         {
             destination = mousePosition;
+            Debug.Log(map.GetTile(gridPosition));
         }
     }
 
